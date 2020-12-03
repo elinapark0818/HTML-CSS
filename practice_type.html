@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>practice_type</title>
+  </head>
+  <p><h1>PracticeType</h1>
+  <p><li>button</li>
+  <li>checkbox</li>
+  <li>color</li>
+  <li>date</li>
+  <li>datetime-local</li>
+  <li>email</li>
+  <li>file</li>
+  <li>hidden</li>
+  <li>image</li>
+  <li>month</li>
+  <li>number</li>
+  <li>password</li>
+  <li>radio</li>
+  <li>range</li>
+  <li>reset</li>
+  <li>search</li>
+  <li>submit</li>
+  <li>tel</li>
+  <li>text</li>
+  <li>time</li>
+  <li>url</li>
+  <li>week</li></p>
+  <body>
+<p>
+    <form>
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+    </form>
+<p>
+    <form>
+  User name:<br>
+  <input type="text" name="username"><br>
+  User password:<br>
+  <input type="password" name="psw">
+    </form>
+<p>
+    <form action="action_page.php"> # submit 버튼을 제출하는 버튼이다.
+  First name:<br>
+  <input type="text" name="firstname" value="Elina"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Park"><br><br>
+  <input type="submit" value="Submit">
+    </form>
+<p>
+    <form action="action_page.php"> #submit 버튼의 value 속성을 생략하며, 버튼에는 기본값이 할당된다.
+  First name:<br>
+  <input type="text" name="firstname" value="Elina"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Park"><br><br>
+  <input type="submit"> # value 가 없으면 기본 값으로 설정된다.
+    </form>
+<p>
+    <form>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+    </form>
+<p>
+    <form>
+      <input type="checkbox" name="animal" value="Dog"> I like a Dog<br>
+      <input type="checkbox" name="animal" value="Cat"> I like a Cat
+    </form>
+<p>
+    <input type="button" onclick="alert('Thanks you!')" value="Click Me!">
+<p>
+    <form>
+      Quantity (between 1980 and 2002):
+      <input type="number" name="quantity" min="1980" max="2002">
+    </form>
+<p>
+    <form>
+      Quantity:
+      <input type="number" name="points" min="0" max="100" step="10" value="0">
+    </form>
+<p>
+    <form>
+      start:
+      <input type="date" name="bday">
+    </form>
+<p>
+    <form>
+      Before 1980-01-01:
+      <input type="date" name="bday" max="1979-12-31"><br>
+      After 2000-01-01:
+      <input type="date" name="bday" min="2000-01-02"><br>
+    </form>
+<p>
+    <form>
+      Select your favorite color:
+      <input type="color" name="favorite_color">
+    </form>
+<p>
+    <form>  # Slider control 로 표시된다(0~100)
+      <input type="range" name="points" min="0" max="100">
+    </form>
+<p>
+    <form>
+      Birthday (month and year): # 년 월
+      <input type="month" name="bdaymonth">
+    </form>
+<p>
+    <form>
+      Select a week:
+      <input type="week" name="week_year">
+    </form>
+<p>
+    <form>
+      Select a time:
+      <input type="time" name="usr_time">
+    </form>
+<p>
+
+
+
+
+
+  </body>
+</html>
