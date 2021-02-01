@@ -3,5 +3,5 @@ ul {
 }
 ul li::after {
   content: ".0";
-  url(https://heropy.blog/css/images/logo.png);
+url(https://heropy.blog/css/images/logo.png);
 }
