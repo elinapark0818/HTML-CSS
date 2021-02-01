@@ -1,0 +1,17 @@
+.fruits {
+  font-size: 40px;
+  font-weight: bold;
+}
+.fruits p:nth-of-type(1) {
+  color: red;
+}
+
+ul {
+  font-size: 40px;
+}
+ul li::before {
+  content: "숫자";
+  font-weight: bold;
+  color: red;
+  margin-right: 20px;
+}
