@@ -10,8 +10,11 @@ ul {
   font-size: 40px;
 }
 ul li::before {
-  content: "숫자";
-  font-weight: bold;
-  color: red;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: tomato;
   margin-right: 20px;
+  display: inline-block;
+  border-radius: 50px;
 }
