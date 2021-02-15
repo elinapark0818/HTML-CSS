@@ -1,6 +1,33 @@
-ul {
-  font-size: 40px;
+html {
+  font-size: 10px;
 }
-ul li::after {
-  content: ".0";
+body * {
+  border: 2px solid;
+}
+.container {
+  width: 60em;
+  font-size: 12px;
+}
+.parent {
+  width: 50%;
+  font-size: 2em;
+}
+.child {
+  width: 150px;
+  font-size: 2rem;
+}
+.vwvh {
+  width: 50vw;
+  height: 50vh;
+  background: red;
+}
+span {
+  width: 0; /* 0에서 시작한다*/
+  height: 0; /* 0에서 시작한다*/
+  background: green;
+}
+div {
+  width: auto; /* 100% 에서 시작한다*/
+  height: auto; /* 0에서 시작한다*/
+  background: yellow;
 }
