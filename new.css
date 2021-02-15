@@ -1,0 +1,13 @@
+input {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  margin: 50px 0;
+  padding: 20px 0;
+}
+input:nth-child(2) {
+  display: none;
+}
+input:nth-child(3) {
+  opacity: 0;
+}
