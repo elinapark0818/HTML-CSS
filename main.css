@@ -48,3 +48,9 @@ div {
   margin-bottom: 100px;
   margin-left: 100px;
 }
+.pd {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  box-sizing: border-box;
+}
