@@ -8,3 +8,16 @@
 [type="password"] {
   color: yellow;
 }
+
+[class^="btn-"] {
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+[class$="Success"]{
+  color: green;
+}
+
+[class$="Danger"]{
+  color: grey;
+}
