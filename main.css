@@ -31,3 +31,16 @@ div {
   height: auto; /* 0에서 시작한다*/
   background: yellow;
 }
+.pp {
+  width: 100px;
+  height: 300px;
+  border: 4px solid tomato;
+  margin: 20px;
+}
+.cc {
+  max-width: 400px;
+  min-width: 200px;
+  height: 200px;
+  border: 4px solid tomato;
+  background: orange;
+}
