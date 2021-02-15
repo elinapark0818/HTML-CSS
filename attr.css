@@ -1,0 +1,6 @@
+.disabled {
+  opacity: 0.2; /* 투명도를 20%로 낮춘다 */
+}
+[disabled] {
+  opacity: 0.2;
+}
