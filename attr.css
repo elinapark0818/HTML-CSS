@@ -5,3 +5,6 @@
   opacity: 0.2;
   color: red;
 }
+[type="password"] {
+  color: yellow;
+}
