@@ -1,0 +1,102 @@
+p {
+  font-size: 40px;
+  font-style: italic;
+}
+div {
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+.serif {
+  font-family: serif;
+}
+.sans-serif {
+  font-family: sans-serif;
+}
+.monospace {
+  font-family: monospace;
+}
+.cursive {
+  font-family: cursive;
+}
+.box { font: italic bold 20px / 1.5 "Arial", sans-serif;}
+
+.box {
+	font: 30px / 1.5;  /*에러*/
+	font: bold;  /*에러*/
+	font: bold sans-serif  /*에러*/
+	font: 30px / 1.5 sans-serif;
+	font: bold 30px sans-serif
+	font: italic 30px / 1.5 "Arial", sans-serif;
+	}
+	/*
+	단축 속성을 사용하려면 font-size와 font-family를 필수로 입력해야 한다
+
+font-weight : 100~900 까지 100단위
+
+thin(hairline) = 100
+extra light(ultra light) = 200
+light = 300
+normal = 400
+medium = 500
+semi bold(demi bold) = 600
+bold = 700
+extra bold(ultra bold) = 800
+black(heavy) = 900
+
+부모요소보다 ~~  er
+bolder / lighter
+
+
+font-size  16px
+
+line-height 행간 , 줄의 높이 normal=32
+단위 없이 숫자만 입력하면 글자크기의 배수로. (1.4 ~ 1.7) 많이 지정한다
+
+font-family  글꼴후보, 글꼴후보, 글꼴후보, 글꼴 계열;
+
+font-family: Arial, "Open Sans", "돋움", dotum, sans-serif;
+
+글꼴계열
+
+serif  바탕체 계열
+sans-serif 고딕체 계열
+monospace 고정너비가(가로폭이 동일한) 글꼴 개발할때 많이 쓴다.
+cursive 필기체 계열
+fantasy 장식이 있는 표현
+
+색상 표현
+
+색상이름  			브라우저에서 제공하는 색상의 이름  red,blue,orange 등등
+★ Hex색상코드		 16진수 색상(Hexadecimal Colors)  #000000(검정) #ffffff(흰색)
+RGB  빛의 삼원색  			rgb(255, 255, 255) 레드 그린 블루
+RGBA 빛의 삼원색, 투명도 		rgba(255, 0, 0, .5) 투명도(Alpha)
+HSL 색상,채도,명도 			hsl(120, 100%, 50%)
+HSLA 색상,채도,명도,투명도 	 hsla(120, 100%, 50%, .3)
+
+
+
+text-align  문자 정렬 방식
+
+left
+right
+center
+justify 양쪽맟춤 (2줄 이상일 때만)
+
+text-indent (첫번째 줄의) 들여쓰기를 지정한다 음수는 내어쓰기다
+
+text-indent: -9999px; 글자를 화면 밖으로 밀어내는 방법.
+
+
+
+text-decoration 텍스트 선에 대한 장식
+
+none
+underline    밑줄
+overline     윗줄
+line-through 중앙선
+
+
+letter-spacing  글자와 글자 사이의 간격
+
+word-spacing  단어와 단어 사이의 간격(띄어쓰기) */
