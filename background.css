@@ -1,0 +1,16 @@
+section {
+  height: 500px;
+  border: 2px dashed lightgray;
+}
+.section2 {
+  background-image: url("https://www.starbucks.co.kr/common/img/main/mob_fav_prod_bg_new.jpg");
+  background-size: auto 100%
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+.section3 {
+  background-image: url("https://www.starbucks.co.kr/common/img/store/bnr_temp_store.jpg");
+  background-size: auto 100%
+  background-position: right bottom;
+  background-attachment: fixed;
+}

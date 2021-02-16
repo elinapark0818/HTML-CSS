@@ -7,7 +7,7 @@
 }
 .section {
   height: 200px;
-  border: 5px dashed lightgray;
+  border: 4px dashed #bcbcbc;
 }
 .section h1 {
   text-align: center;
@@ -16,4 +16,20 @@
   font-weight: bold;
   position: sticky;
   top: 0;
+}
+
+.box-group {
+  display: flex;
+}
+.box-group .box {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+  border: 4px dashed red;
+  border-radius: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -30px;
 }
