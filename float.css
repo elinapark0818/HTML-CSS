@@ -1,0 +1,23 @@
+article {
+
+}
+article .picture {
+  width: 200px;
+  height: 200px;
+  background: tomato;
+  float:left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+article .text {
+  clear: left;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background: green;
+  color: white;
+  font-size: 30px;
+  margin: 10px;
+  float: right;
+}
