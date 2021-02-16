@@ -21,3 +21,9 @@ article .text {
   margin: 10px;
   float: right;
 }
+.box1 {
+  width: 150px;
+  height: 200px;
+  background: orange;
+  clear: right;
+}
