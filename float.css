@@ -27,3 +27,24 @@ article .text {
   background: orange;
   clear: right;
 }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.float-box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background: orange;
+  float: left;
+}
+
+.new-box {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background: green;
+}
