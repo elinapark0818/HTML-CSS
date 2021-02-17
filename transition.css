@@ -23,3 +23,29 @@ img {
   transition: 1s;
   transform: perspective(100px) rotateY(180deg);
 }
+.perspective {
+  width: 200px;
+  perspective: 500px;
+  margin: 50px;
+  transform-style: preserve-3d;
+}
+.grandparent {
+  width: 400px;
+  border: 3px solid dodgerblue;
+  transition: 3s;
+  transform: rotateX(-45deg);
+  transform-style: preserve-3d;
+}
+.parent {
+  width: 400px;
+  border: 3px solid orange;
+  transition: 1s;
+  transform: rotateY(-45deg);
+  transform-style: preserve-3d;
+}
+img {
+  width: 400px;
+  border: 3px solid orange;
+  transition: 1s;
+  transform: rotateX(-45deg);
+}
