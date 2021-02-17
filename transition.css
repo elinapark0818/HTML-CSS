@@ -28,6 +28,7 @@ img {
   perspective: 500px;
   margin: 50px;
   transform-style: preserve-3d;
+  perspective-origin: 50% 100%;
 }
 .grandparent {
   width: 400px;
