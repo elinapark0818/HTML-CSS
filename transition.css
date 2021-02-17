@@ -13,5 +13,5 @@
 .box:hover {
   width: 300px;
   background: blue;
-  transform: translate(30px, 30px);
+  transform: translate(30px, 30px) skew(45deg);
 }
