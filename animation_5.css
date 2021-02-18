@@ -1,0 +1,37 @@
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: orange;
+  animation: movemove 9s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+
+}
+.box:hover {
+  animation-play-state: paused;
+  background: dodgerblue;
+}
+
+.box::before {
+	content: "running";
+	font-size: 20px;
+	color: white;
+	}
+.box:hover::before {
+	content: "paused";
+	}
+
+@keyframes movemove {
+  0% {
+    width: 150px;
+  }
+  100% {
+    width: 500px;
+  }
+}
