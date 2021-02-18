@@ -13,13 +13,13 @@
   background: tomato;
   border: 4px dashed red;
   border-radius: 10px;
+  flex: 1;
 }
 .item1 {
   order: 1;
+  flex-grow: 2;
 }
-.item4 {
-  order: 1;
-}
-.item6 {
+.item5 {
   order: -1;
+  align-self: center;
 }
