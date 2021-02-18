@@ -29,14 +29,14 @@
 .card .face-front {
   transform: rotateY(0deg);
 }
-.card:active .face-front {
+.card:hover .face-front {
   transform: rotateY(-180deg);
 }
 .card .face-back {
   transform: rotateY(180deg);
   background-image: url("https://heropy.blog/css/images/pattern.png");
 }
-.card:active .face-back {
+.card:hover .face-back {
   transform: rotateY(0deg);
 }
 .card .face-front img {
