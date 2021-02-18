@@ -1,0 +1,13 @@
+body {
+  padding: 10px;
+}
+.container {
+  border: 3px solid red;
+  display: inline-flex;
+}
+.container .items {
+  width: 100px;
+  height: 100px;
+  border: 3px solid;
+  border-radius: 10px;
+}
