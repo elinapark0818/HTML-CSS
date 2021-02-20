@@ -1,0 +1,13 @@
+.container {
+  background: lightyellow;
+  color: gray;
+  width: 400px;
+  border: 10px solid orange;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-rows: 100px;
+}
+.item {
+  border: 5px dashed yellowgreen;
+  font-size: 20px;
+}
