@@ -1,0 +1,91 @@
+$color-primary: #e96900;
+$url-images: "/assets/images/";
+$w: 200px;
+
+.box {
+  width: $w;
+  margin-left: $w;
+  background: $color-primary url($url-images + "bg.jpg");
+}
+@mixin size ($w: 100px, $h: 100px) {
+    width: $w;
+    height: $h;
+}
+
+.box1 {
+    @include size;
+}
+.box2 {
+    @include size($h: 300px);
+}
+.box3 {
+    @include size;
+}
+
+@mixin large-text {
+  font: {
+    size: 22px;
+    weight: bold;
+    family: sans-serif;
+  }
+  color: orange;
+
+  &::after {
+    content: "!!";
+  }
+
+  span.icon {
+    background: url("/images/icon.png");
+  }
+}
+
+.box5 {
+    @include large-text;
+}
+
+@mixin icon ($url) {
+    &::after {
+        content: $url;
+        @content;
+    }
+}
+
+.group1 {
+    @include icon("image/icon1.png");
+}
+.group2 {
+    @include icon("image/icon2.png") {
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+    };
+}
+
+@mixin font(
+  $style: normal,
+  $weight: normal,
+  $size: 16px,
+  $family: sans-serif
+) {
+  font: {
+    style: $style;
+    weight: $weight;
+    size: $size;
+    family: $family;
+  }
+}
+div {
+  // 매개변수 순서와 개수에 맞게 전달
+  $font-values: italic, bold, 16px, sans-serif;
+  @include font($font-values...);
+}
+span {
+  // 필요한 값만 키워드 인수로 변수에 담아 전달
+  $font-values: (style: italic, size: 22px);
+  @include font($font-values...);
+}
+a {
+  // 필요한 값만 키워드 인수로 전달
+  @include font((weight: 900, family: monospace)...);
+}
