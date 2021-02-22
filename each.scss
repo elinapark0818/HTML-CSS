@@ -31,3 +31,21 @@ $fruits-data: (
             background: url("/images/#{$country}.png");
         }
     }
+
+
+
+    $fruits-data: (
+        apple: korea,
+        orange: china,
+        banana: japan
+        );
+        @each $fruit, $country in $fruits-data {
+            // map-keys($fruits-data) => (apple, orange, banana)
+            // map-values($fruits-data) => (korea, china, japan)
+            $fruits-data--key-list: map-keys($fruits-data);
+            $index: index($fruits-data--key-list, $fruit);
+            .box-#{$fruit} {
+                width: 100px * $index;
+                background: url("/images/#{$country}.png");
+            }
+        }
