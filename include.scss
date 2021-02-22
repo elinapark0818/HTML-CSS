@@ -89,3 +89,13 @@ a {
   // 필요한 값만 키워드 인수로 전달
   @include font((weight: 900, family: monospace)...);
 }
+
+.btn {
+  padding: 10px;
+  margin: 10px;
+  background: blue;
+}
+.btn-danger {
+  @extend .btn;
+  background: red;
+}
