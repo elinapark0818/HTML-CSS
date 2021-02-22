@@ -1,0 +1,11 @@
+@for $i from 1 through 5 {
+    .through:nth-child(#{$i}) {
+        width: 20px * $i;
+    }
+}
+
+@for $i from 6 to 10 {  // from부터 to 숫자 직전까지
+    .through:nth-child(#{$i}) {
+        width: 20px * $i;
+    }
+}
