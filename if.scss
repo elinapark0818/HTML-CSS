@@ -1,0 +1,34 @@
+
+
+@function limitSize($size) {
+    @if ($size >= 0 and $size <= 200px) {
+        @return 200px;
+    } @else {
+        @return 800px;
+    }
+}
+.div {
+    width: limitSize(180px);
+    height: limitSize(340px);
+}
+
+@mixin positionCenter($w, $h, $p: absolute) {
+    width: if(unitless($w), #{$w}px, $w);
+    height: if(unitless($h), #{$h}px, $h);
+    position: $p;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.boxx1 {
+    @include positionCenter(10px, 20px);
+}
+.boxx2 {
+    @include positionCenter(50, 550, fixed);
+}
+.boxx3 {
+
+}
