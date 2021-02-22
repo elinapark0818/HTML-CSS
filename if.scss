@@ -13,6 +13,11 @@
 }
 
 @mixin positionCenter($w, $h, $p: absolute) {
+    @if ($p == absolute
+    or $p == fixed
+    or not $p == relative
+    or not $p == static
+    ) {
     width: if(unitless($w), #{$w}px, $w);
     height: if(unitless($h), #{$h}px, $h);
     position: $p;
@@ -21,6 +26,7 @@
     left: 0;
     right: 0;
     margin: auto;
+    }
 }
 
 .boxx1 {
@@ -30,5 +36,5 @@
     @include positionCenter(50, 550, fixed);
 }
 .boxx3 {
-
+    @include positionCenter(100, 200, relative);
 }
