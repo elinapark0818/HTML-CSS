@@ -1,0 +1,33 @@
+$fruits: (apple, orange, banana, mango);
+
+.fruits {
+  @each $fruit in $fruits {
+    li.#{$fruit} {
+      background: url("/images/#{$fruit}.png");
+    }
+  }
+}
+
+$fruits: apple, orange, banana, mango;
+
+.fruits {
+  @each $fruit in $fruits {
+    $index: index($fruits, $fruit)
+    li:nth-child(#{$index}) {
+      left: 50px * $index;
+      background: url("/images/#{$fruit}.png");
+    }
+  }
+}
+
+
+$fruits-data: (
+    apple: korea,
+    orange: china,
+    banana: japan
+    );
+    @each $fruit, $country in $fruits-data {
+        .box-#{$fruit} {
+            background: url("/images/#{$country}.png");
+        }
+    }
